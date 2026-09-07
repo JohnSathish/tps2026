@@ -7,7 +7,7 @@ import { useQuery } from '@tanstack/react-query';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { AlertTriangle, Send, UserPlus } from 'lucide-react';
+import { AlertTriangle, BookOpen, Send, UserPlus } from 'lucide-react';
 import { SchoolPublicSplit } from '@/components/school-admissions-portal/school-public-split';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -29,6 +29,7 @@ type FormValues = z.infer<ReturnType<typeof schoolRegisterSchema>>;
 
 const CREDENTIALS_KEY = 'tps-kg-registration';
 const LOGIN_HREF = '/school-admissions-portal/login';
+const PARENT_GUIDE_HREF = '/school-admissions/kg-admission-2027-instructions.html';
 
 export default function SchoolAdmissionsRegisterPage() {
   const router = useRouter();
@@ -222,6 +223,15 @@ export default function SchoolAdmissionsRegisterPage() {
             <p className="text-sm text-slate-600">
               {info.data.message || 'Online admissions are currently closed.'}
             </p>
+            <a
+              href={PARENT_GUIDE_HREF}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-[#1a5336] underline"
+            >
+              <BookOpen className="h-4 w-4" aria-hidden />
+              Parent User Guide
+            </a>
             {info.data.lastDateLabel ? (
               <p className="text-sm text-slate-600">
                 The last date to apply was {info.data.lastDateLabel}.
@@ -240,6 +250,20 @@ export default function SchoolAdmissionsRegisterPage() {
               <h2 className="tps-serif mt-2 text-2xl text-slate-900">
                 Register for K.G. Admission 2027
               </h2>
+              <a
+                href={PARENT_GUIDE_HREF}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 flex items-start gap-3 rounded-xl border border-[#c6e2d1] bg-[#eaf5ee] px-3.5 py-3 text-sm text-[#1a5336] transition hover:bg-[#dff0e5]"
+              >
+                <BookOpen className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />
+                <span>
+                  <span className="font-semibold">Parent User Guide</span>
+                  <span className="mt-0.5 block text-xs font-normal leading-relaxed text-slate-600">
+                    Read the step-by-step instructions before you register (print or save as PDF).
+                  </span>
+                </span>
+              </a>
             </div>
             <ol className="grid grid-cols-3 gap-2 rounded-2xl bg-[#f4f7f5] p-3 text-center text-[11px] font-medium">
               {['Basic Details', 'Verify Email', 'Get Login Details'].map((label, index) => {
