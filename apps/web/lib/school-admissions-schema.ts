@@ -8,7 +8,7 @@ import {
 
 export const SCHOOL_DOCUMENT_SLOTS = [
   { code: 'PHOTO', label: 'Passport photograph (school uniform)', required: true },
-  { code: 'BIRTH_CERT', label: 'Birth certificate', required: true },
+  { code: 'BIRTH_CERT', label: 'Birth Certificate of the Child', required: true },
   { code: 'CASTE_CERT', label: 'Caste Certificate', required: false },
   { code: 'MOTHER_ST_CERT', label: 'Mother’s ST Certificate', required: false },
   {

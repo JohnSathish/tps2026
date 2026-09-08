@@ -146,7 +146,7 @@ export default function SchoolAdmissionsDashboardPage() {
           icon={ClipboardList}
           tone="blue"
           title="Upload Documents"
-          body="Photo, birth certificate, last school papers, father’s and mother’s income certificates, and — when the child’s Caste / Category (and Community) require it — Caste Certificate (General / UR), Mother’s ST, or Father’s SC / OBC certificate."
+          body="Photo, birth certificate of the child, last school papers, father’s and mother’s income certificates, and — when the child’s Caste / Category (and Community) require it — Caste Certificate (General / UR), Mother’s ST, or Father’s SC / OBC certificate."
           href="/school-admissions-portal/documents"
           status={docsDone ? 'Done' : 'Pending'}
         />

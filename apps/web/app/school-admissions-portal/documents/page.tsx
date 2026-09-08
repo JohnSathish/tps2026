@@ -175,7 +175,7 @@ export default function SchoolDocumentsPage() {
                 Multi-page certificates: upload one JPG/PNG image per page (up to{' '}
                 {SCHOOL_UPLOAD_MAX_PAGES_PER_SLOT} pages).
               </li>
-              <li>Names must match the birth certificate exactly.</li>
+              <li>Names must match the child’s birth certificate exactly.</li>
               <li>
                 Caste Certificate appears for General / UR so the school can verify the category.
               </li>

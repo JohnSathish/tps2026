@@ -19,7 +19,11 @@ export const SCHOOL_DOCUMENT_SLOTS = [
     label: 'Passport photograph (school uniform)',
     required: true,
   },
-  { code: 'BIRTH_CERT', label: 'Birth certificate', required: true },
+  {
+    code: 'BIRTH_CERT',
+    label: 'Birth Certificate of the Child',
+    required: true,
+  },
   /** Conditional caste slot — required for General / UR via document rules. */
   { code: 'CASTE_CERT', label: 'Caste Certificate', required: false },
   {

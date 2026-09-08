@@ -60,7 +60,8 @@ const SLOT_ICONS: Record<string, typeof Camera> = {
 
 const DEFAULT_DESCRIPTIONS: Record<string, string> = {
   PHOTO: 'Recent passport-size photo in school uniform (JPG or PNG).',
-  BIRTH_CERT: 'Clear photo of the original birth certificate.',
+  BIRTH_CERT:
+    'Clear photo of the original birth certificate of the child (not a parent’s birth certificate).',
   CASTE_CERT:
     'Required for General / UR candidates. Please upload a clear copy of the caste certificate issued by a competent authority so the school can verify the category.',
   MOTHER_ST_CERT:

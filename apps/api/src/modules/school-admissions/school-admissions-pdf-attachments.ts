@@ -104,7 +104,7 @@ export function schoolAttachmentLabelForSlot(
     case 'PHOTO':
       return 'Passport Photograph';
     case 'BIRTH_CERT':
-      return 'Birth Certificate';
+      return 'Birth Certificate of the Child';
     case 'LAST_SCHOOL_REPORT':
       return 'Last School Report Card';
     case 'LAST_SCHOOL_CERT':
